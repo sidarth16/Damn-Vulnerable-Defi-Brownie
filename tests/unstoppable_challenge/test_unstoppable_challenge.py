@@ -5,8 +5,8 @@ from brownie import accounts , Wei , exceptions
 
 deployer, attacker, someUser = None, None, None
 
-TOKENS_IN_POOL = Wei('1_000_000')           # Pool has 1M * 10**18 tokens
-INITIAL_ATTACKER_TOKEN_BALANCE = Wei('100') # Attacker has 100* 10**18 tokens
+TOKENS_IN_POOL = Wei('1_000_000 ether')           # Pool has 1M * 10**18 tokens
+INITIAL_ATTACKER_TOKEN_BALANCE = Wei('100 ether') # Attacker has 100* 10**18 tokens
 
 @pytest.fixture(scope="module")
 def contracts():

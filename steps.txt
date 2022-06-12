@@ -1,5 +1,0 @@
-npm i @openzeppelin/contracts
-npm i ganache
-npm i hardhat
-pip install -r requirements.txt
-source DVD_test_env/bin/activate

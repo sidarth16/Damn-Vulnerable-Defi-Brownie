@@ -3,16 +3,16 @@
 reports:
   exclude_contracts:
     - SafeMath
-# dependencies:
-#   - OpenZeppelin/openzeppelin-contracts@4.6.0
-# compiler:
-#   solc:
-#     version: null
-#     optimizer:
-#       enabled: true
-#       runs: 200
-#     remappings:
-#       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0'
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.6.0
+compiler:
+  solc:
+    version: null
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0'
 
 networks:
   default: hardhat
