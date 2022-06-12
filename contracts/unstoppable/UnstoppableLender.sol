@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {console} from "../Console.sol";
 
 interface IReceiver {
     function receiveTokens(address tokenAddress, uint256 amount) external;
@@ -21,6 +22,7 @@ contract UnstoppableLender is ReentrancyGuard {
     constructor(address tokenAddress) {
         require(tokenAddress != address(0), "Token address cannot be zero");
         damnValuableToken = IERC20(tokenAddress);
+        console.log("-------------------Hello World-------------------");
     }
 
     function depositTokens(uint256 amount) external nonReentrant {
